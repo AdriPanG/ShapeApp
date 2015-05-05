@@ -15,7 +15,7 @@ public class AltaPersonal extends javax.swing.JPanel {
     /**
      * Creates new form AltaMaterial
      */
-    public AltaPersonal() {
+    public AltaPersonal(boolean personal) {
         initComponents();
     }
 

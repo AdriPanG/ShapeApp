@@ -6,16 +6,19 @@
 
 package VentanaGrafica;
 
+import Control.ControladorAlquilerCompra;
+
 /**
  *
  * @author juanjose
  */
 public class AlquilerInstalacion extends javax.swing.JPanel {
-
+	ControladorAlquilerCompra control;
     /**
      * Creates new form AlquilerMaterial
      */
-    public AlquilerInstalacion() {
+    public AlquilerInstalacion(ControladorAlquilerCompra controlador) {
+    	control = controlador;
         initComponents();
     }
 
@@ -105,7 +108,7 @@ public class AlquilerInstalacion extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bAlquilarActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+       control.alquilarInstalacion(jcbTipo.getSelectedItem().toString(), jtxHoras.getText());
     }
 
     private void bCancelarActionPerformed(java.awt.event.ActionEvent evt) {
