@@ -11,7 +11,7 @@ package VentanaGrafica;
  * @author juanjose
  */
 public class VentanaInicio extends javax.swing.JPanel {
-
+	
     /**
      * Creates new form VentanaInicio
      */
